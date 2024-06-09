@@ -3,33 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style_login_eng.css">
-    <title>Login - Engenharia</title>
+    <link rel="stylesheet" href="style_id_ajuste.css">
+
+    <title>ID - Solicitação De Ajuste</title>
 </head>
+
 <body>
     <div class="cabecalho">
         <img class="logo" src="Logo UPX Letra Branca.png" alt="">
         <h1>NICETY</h1>
         <a class="home_cab" href="index.html" rel="Página Inicial" target="_self"><img src="home 16px.png" alt=""></a>
     </div>
+
     <div class="container">
-        <h2 class="textoLogin">Login</h2>
-        <input class="logineng" type="text" id="email" placeholder="Email">
+        <h2 class="textoId">Insira seu ID</h2>
+        <input class="idfuncionario" type="number" placeholder="  ID" id="inputId">
         <br><br>
-        <input class="senhaeng" type="password" id="password" placeholder="Senha">
-        <br><br>
-        <p class="alertaerro" id="error-message"></p>
-        <button onclick="login()" class="button">Entrar</button>
+
+        <button id="entrar" class="button" onclick="buscarNome()">Entrar</button>
     </div>
 
-    <script src="js_login_eng.js"></script>
+    <script src="js_id_ajuste.js"></script>
 
 </body>
 

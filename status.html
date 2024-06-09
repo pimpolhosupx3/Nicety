@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style_status.css">
+
+    <title>Status</title>
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <img class="logo" src="Logo UPX Letra Branca.png" alt="Logo">
+        <h1>NICETY</h1>
+        <a class="home_cab" href="index.html" rel="Página Inicial" target="_self"><img src="home 16px.png" alt=""></a>
+    </div>
+    <div class="container">
+        <div class="status-pendente">
+            <h3>Pendente</h2>
+            <ul id="pendente-list"></ul>
+        </div>
+        <div class="status-aprovado">
+            <h3>Aprovado</h2>
+            <ul id="aprovado-list"></ul>
+        </div>
+        <div class="status-recusado">
+            <h3>Recusado</h2>
+            <ul id="recusado-list"></ul>
+        </div>
+    </div>
+
+    <!-- Pop-up para visualização das informações -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Detalhes da Solicitação</h2>
+            <ul id="detalhes-solicitacao"></ul>
+        </div>
+    </div>
+
+    <script src="js_status.js"></script>
+</body>
+
+</html>

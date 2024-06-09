@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+    <title>Solicitação de Ajuste</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img class="logo" src="Logo UPX Letra Branca.png" alt="">
+        <h1>NICETY</h1>
+        <a class="home_cab" href="index.html" rel="Página Inicial" target="_self"><img src="home 16px.png" alt=""></a>
+    </div>
+    <main>
+        <div class="formulario">
+            <form id="solicitacaoForm">
+                <h3 class="textoformulario">Prencha sua Solicitação</h3>
+                <input class="inputpadrao" type="text" id="cliente" name="cliente" placeholder=" Cliente" required>
+                <input class="inputpadrao" type="text" id="tecnologia" name="tecnologia" placeholder=" Tecnologia" required>
+                <input class="inputpadrao" type="text" id="ordem" name="ordem" placeholder=" Ordem" required>
+                <input class="inputpadrao" type="text" id="operacao" name="operacao" placeholder=" Operação" required>
+                <input class="inputpadrao" type="text" id="hrplan" name="hrplan" placeholder=" Horas Planejadas" required>
+                <input class="inputpadrao" type="text" id="hrconf" name="hrconf" placeholder=" Horas Confirmadas" required>
+                <input class="inputpadrao" type="text" id="quantplan" name="quantplan" placeholder=" Quantidade Planejadas" required>
+                <input class="inputpadrao" type="text" id="quantconf" name="quantconf" placeholder=" Quantidade Confirmada" required>
+                <input class="campojustificativa" type="text" id="justificativa" name="justificativa" placeholder=" Justificativa" maxlength="500" rows="4" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <p id="mensagem"></p>
+    </main>
+
+     <!-- Pop-up Container -->
+     <div id="popup" class="popup">
+        <div class="popup-content">
+            <p class="textoenviado" id="popup-message"></p>
+            <img class="imgenviado" src="enviado.png" alt="">
+            <button id="homeButton" class="button3">Home</button>
+        </div>
+    </div>
+
+    <script src="js_exibir_nome.js"></script>
+    <script src="js_env_form.js"></script>
+</body>
+
+</html>

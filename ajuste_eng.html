@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style_ajuste_eng.css">
+    <title>Pendentes e Concluidos</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <img class="logo" src="Logo UPX Letra Branca.png" alt="Logo">
+        <h1>NICETY</h1>
+        <span id="nome-eng" class="nome-eng"></span>
+        <button id="logoutButton" class="button-logout">Logout</button>
+    </div>
+    <div class="container_ajPen">
+        <div class="ajPen">
+            <h3>Ajustes Pendentes</h3>
+            <ul id="pendentes-list" class="solicitacoes-list"></ul>
+        </div>
+    </div>
+    <div class="container_ajCon">
+        <div class="ajCon">
+            <h3>Ajustes Concluidos</h3>
+            <ul id="concluidos-list" class="solicitacoes-list"></ul>
+        </div>
+    </div>
+
+    <!-- Pop-up para visualização e aprovação/rejeição -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopupButton" class="close">&times;</span>
+            <div id="detalhes-solicitacao"></div>
+            <div id="status"></div>
+            <textarea id="justificativa" placeholder="Justificativa"></textarea>
+            <button id="aprovarButton" class="button-approve">Aprovar</button>
+            <button id="rejeitarButton" class="button-reject">Rejeitar</button>
+        </div>
+    </div>
+
+    <script src="js_ajuste_eng.js"></script>
+</body>
+</html>
