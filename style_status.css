@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #dcdcdc;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.logo {
+    width: 90px;
+    height: 80px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    background-color: #009EC1;
+    height: 90px;
+    padding: 0 20px;
+}
+
+a.home_cab {
+    margin-left: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.status-pendente,
+.status-aprovado,
+.status-recusado {
+    flex: 1;
+    padding: 20px;
+}
+
+h3 {
+    color: #009EC1;
+    background-color: #b9b9b9;
+    text-align: center;
+    font-size: medium;
+    padding: 3px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+li:hover {
+    background: #e0f7fa;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    margin-top: 5%;
+    margin-left: 35%;
+    padding: 20px;
+    background: white;
+    padding: 2px;
+    border-radius: 10px;
+    text-align: left;
+    width: 60%;
+    max-width: 600px;
+    max-height: 80%; /* Define a altura máxima */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-down 0.3s ease-out;
+
+    /* Estilo da barra de rolagem */
+    scrollbar-width: thin; /* Para navegadores que suportam a especificação recente */
+    scrollbar-color: #1897bea7 #ffffff; /* Cor da barra de rolagem e do fundo */
+}
+
+.popup-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+    background-color: #1897bea7;
+    border-radius: 6px;
+    border: 3px solid #ffffff; /* Cor da borda da barra de rolagem */
+}
+
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.popup-content .detalhes-solicitacao,
+.popup-content .status {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.justificativa-text {
+    white-space: pre-wrap;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.textarea-justificativa {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.button-close {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-close {
+    background-color: #cccccc;
+    color: white;
+}
+
+.nome-eng {
+    flex: 1;
+    text-align: right;
+    padding-right: 20px;
+    color: #ffffff;
+}
